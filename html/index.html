@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="../img/iconLogo.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <script defer src="../js/main.js"></script>
+   
+    
+    <title>CanvArt HOME</title>
+</head>
+<body>
+    <header>
+        <nav class="fixed-top bg-white d-none d-md-flex">
+            <div class="logo">
+                <a href="index.html"><img src="../img/iconLogo.png" alt="CanvArt logo"></a>
+                <a href=""><span>CanvArt</span></a>
+            </div>
+            <div class="searchBar">
+                 <input type="search" id="" name="" placeholder="Search NFTs, artists & collections">
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">
+                    <a class="btn btn-active-border-red dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li ><a class="dropdown-item" href="#">NFTs</a></li>
+                      <hr class="w-75 my-0 mx-auto">
+                      <li><a class="dropdown-item" href="#">Collections</a></li>
+                      <hr class="w-75 my-0 mx-auto">
+                      <li><a class="dropdown-item" href="#">Users</a></li>
+                      <hr class="w-75 my-0 mx-auto">
+                      <li><a class="dropdown-item" href="#">Trending</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Community
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Magazine</a></li>
+                      <hr class="w-75 my-0 mx-auto">
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <hr class="w-75 my-0 mx-auto">
+                      <li><a class="dropdown-item" href="#">Topic</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                    </a>
+                  </div>
+                  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="userLogo rounded-circle" src="../img/dune3.png" alt=""></button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <div class="d-flex flex-column gap-4">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"><img class="userIcon rounded-circle" src="../img/dune3.png" alt="">  @Daniel White</h5>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="rounded btn-outline-dark bg-white">0x7A...Xb8v</button>
+                                <button type="button" class="btn rounded-end btn-outline-dark" data-toggle="tooltip" title="See transaction history"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                                    <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                                  </svg></button>
+                                <button type="button" class="btn btn-outline-dark" data-toggle="tooltip" title="Copy your address"><svg xmlns="http://www.w3.org/2000/svg" width="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                  </svg></button>
+                              </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-unstyled fs-6" >
+                            <li class="my-4 fw-light" ><a href="">My profile</a></li>
+                            <li class="my-4 fw-light" ><a href="">My feed</a></li>
+                            <li class="my-4 fw-light" ><a href="">Dashboard<svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-speedometer2 pb-1 ms-2" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                              </svg></a></li>
+                            <li class="my-4 fw-light" ><a href="">Settings<svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-gear pb-1 ms-2" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                              </svg></a></li>
+                            <li class="my-4 fw-light" ><a href="">Sign out<svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-box-arrow-left pb-1 ms-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                            </svg></a></li>
+                        </ul>
+                        <hr class="my-5">
+                        <div class="row flex-column gap-3 px-lg-3">
+                            <h4 class="fs-5 px-lg-0">Funds in wallet</h4>
+                            <div class="col-lg-12 d-flex align-items-center ps-lg-0 gap-3 my-lg-3">
+                                <img class="rounded-circle token" src="../img/canvartToken.png" alt="logo CanvArt for token">
+                                <span>CanvArt Token</span>  
+                                <span>1.397$</span>
+                                <span class="text-success">+1.23%</span>
+                            </div>
+                            <div class="col-lg-12 d-flex align-items-center gap-3 ps-lg-0">
+                                <div class=" rounded-circle border border-black token2"><img class="w-50 m-auto d-block" src="../img/ethereumLogo.png" alt="logo CanvArt for token"></div>
+                                <span>ETH</span>  
+                                <span>1302.49$</span>
+                                <span class="text-danger">-1.48%</span>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <div class="row justify-content-around">
+                            <button type="button" class="col-lg-5 btn rounded-end btn-outline-dark text-uppercase">Add funds</button>
+                            <button type="button" class="col-lg-5 btn rounded-end btn-outline-dark px-lg-1 text-uppercase">Swap ETH</button>
+                        </div>
+                    </div>
+                 </div>    
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-light bg-light d-lg-none fixed-top">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+                 <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+    
+         </nav>
+          
+        <div class="poster">
+            <div class="posterDescription">
+                <h1>Claim your NFTs & collect<br>real digital art</h1>
+                <p><strong>Buy </strong>and <strong>sell NFTs</strong> from<br>the world's top artists</p>
+                <a href="#">Get started</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container holdingCoin">
+        <h2 class="mb-5"><img src="../img/line.png" alt=""> Art is to important not to share <img src="../img/Line 1.png" alt=""></h2>
+        <div class="row justify-content-center align-items-center py-5 cardHolding">
+            <div class="col-lg-3 ">
+                <img class="img-fluid rounded" src="../img/womanStyleGif.gif" alt="">
+            </div>
+            <div class="col-lg-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta asperiores doloremque non provident voluptate atque quos rerum laudantium, deserunt repellendus animi expedita omnis rem, dignissimos magni optio! Itaque, necessitatibus porro.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid faq">
+        <div class="row align-items-center ps-5 p-4 text-light">
+            <div class="col-lg-3 border-start">
+                <h3>What is an NFTs ?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, beatae voluptatem est impedit esse eaque!</p>
+            </div>
+            <div class="col-lg-3 border-start">
+                <h3>What is a wallet ?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, ducimus. Pariatur asperiores aliquam veritatis harum.</p>
+
+            </div>
+            <div class="col-lg-4 border-start">
+                <h3>How do I buy my first NFTs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique dolore ad sint quibusdam rem! Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur !
+                </p>
+            </div>
+            <div class="col-lg-2 d-flex justify-content-center">
+                <a class="text-decoration-none text-black text-uppercase bg-white px-4 py-2" href="">Learn more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="drawMe">
+        <h2><img src="../img/line.png" alt=""> Draw me a digital sheep <img src="../img/Line 1.png" alt=""></h2>
+            <div>
+                <img src="../img/drawMe.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae magnam soluta, autem consectetur quidem ipsum laborum odit modi unde doloribus nisi necessitatibus aspernatur veritatis quasi quo tenetur repellat, deserunt esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci totam, accusamus facere pariatur reiciendis, blanditiis vel sit voluptas sequi esse modi mollitia aut vitae aperiam ipsa voluptates, veritatis reprehenderit!</p>
+            </div>
+    </section>
+
+    <section class="liveAuctions">
+        <!-- <h2><img src="../img/line.png" alt="">Live Auctions<img src="../img/Line 1.png" alt=""></h2>
+        <div class="liveAuctionsContainer">
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/nftMondrian.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div> 
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/Efflrescence.gif" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/nftOutOfTheBlue.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/marylin.gif" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/indianWoman.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/nftGenesis.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>        
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/nftMondrian.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/nftOutOfTheBlue.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+
+            <div class="description">
+                <img class="img-fluid rounded" src="../img/fortior.png" alt="">
+                <h3 class="my-3">Mondiran arch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod.</p>
+                <span class="price"><img src="../img/iconEth.png" alt=""> 2.87 ETH </span>
+                <div class="author">
+                    <span><strong>Name :</strong></span>
+                    <span><strong>Collection :</strong></span>
+                </div>
+                <div class="offer">
+                    <span><strong>Offer :</strong> <img src="../img/iconEth.png" alt=""> 0.5</span>
+                </div>
+            </div>
+            
+        </div> -->
+    </section>
+
+    <section class="container notableCollections">
+        <h2><img src="../img/line.png" alt=""> Notable collections <img src="../img/Line 1.png" alt=""></h2>
+        <div class="row bg-primary py-5 px-5 rounded-3 align-items-center customBackground">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center px-5">
+                    <img class="userIconMondrian" src="../img/userIconMondrian.gif" alt="">
+                    <h3 class="text-light px-2"><a class="text-light text-decoration-none" href="">The color of Dune concept</a></h3>
+                </div>
+                <div class="d-flex justify-content-between text-light">
+                    <span class="px-5 py-3">9 NFT's</span>
+                    <a class="text-light text-decoration-none" href=""><span class="px-5 py-1"><img class="userIconMondrian rounded-circle" src="../img/fortior.png" alt=""> @Walter White</span></a>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/dune1.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@Walter White</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/dune2.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@Walter White</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/dune3.png" alt=""></a>
+                <div class="bg-black text-white px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@Walter White</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Current bid :</span>
+                        <span>Ends in  :</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="container notableCollections">
+        <div class="row bg-primary py-5 px-5 rounded-3 align-items-center customBackground1">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center px-5">
+                    <img class="userIconMondrian" src="../img/Efflrescence.gif" alt="">
+                    <h3 class="text-light px-2"><a class="text-light text-decoration-none" href="">SPVRkLE</a></h3>
+                </div>
+                <div class="d-flex justify-content-between text-light">
+                    <span class="px-5 py-3">9 NFT's</span>
+                    <a class="text-light text-decoration-none" href=""><span class="px-5 py-1"><img class="userIconMondrian rounded-circle" src="../img/nftGenesis.png" alt=""> @L0LV</span></a>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/sparkle1.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/sparkle2.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/sparkle4.png" alt=""></a>
+                <div class="bg-black text-white px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Current bid :</span>
+                        <span>Ends in :</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="container notableCollections">
+        <div class="row bg-primary py-5 px-5 rounded-3 align-items-center customBackground2">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center px-5">
+                    <img class="userIconMondrian" src="../img/sky1.png" alt="">
+                    <h3 class="text-light px-2"><a class="text-light text-decoration-none" href="">SPVRkLE</a></h3>
+                </div>
+                <div class="d-flex justify-content-between  text-light">
+                    <span class="px-5 py-3">9 NFT's</span>
+                    <a class="text-light text-decoration-none" href=""><span class="px-5 py-1"><img class="userIconMondrian rounded-circle" src="../img/nftGenesis.png" alt=""> @L0LV</span></a>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/sky1.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/solarGif.gif" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/sky3.png" alt=""></a>
+                <div class="bg-black text-white px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Current bid :</span>
+                        <span>Ends in :</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="container notableCollections">
+        <div class="row bg-primary py-5 px-5 rounded-3 align-items-center customBackground3">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center px-5">
+                    <img class="userIconMondrian" src="../img/monroeGif.gif" alt="">
+                    <h3 class="text-light px-2"><a class="text-light text-decoration-none" href="">Mondrian concept</a></h3>
+                </div>
+                <div class="d-flex justify-content-between  text-light">
+                    <span class="px-5 py-3">9 NFT's</span>
+                    <a class="text-light text-decoration-none" href=""><span class="px-5 py-1"><img class="userIconMondrian rounded-circle" src="../img/nftGenesis.png" alt=""> @Ethik_Design</span></a>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/mondrian5.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/mondrian4.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg px-5 my-4">
+                <a href=""><img class="img-fluid rounded-top blured" src="../img/nftMondrian.png" alt=""></a>
+                <div class="bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom">
+                    <span class="pt-2 fw-light fs-6">@L0LV</span>
+                    <div class="d-flex pt-5 justify-content-between">
+                        <span>Day volume :</span>
+                        <span>Price value :</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="container holdingCoin">
+        <h2 class="mb-5"><img src="../img/line.png" alt=""> Why holding CanvArt coin ? <img src="../img/Line 1.png" alt=""></h2>
+        <div class="row justify-content-center align-items-center py-5 cardHolding">
+            <div class="col-lg-3 ">
+                <img class="img-fluid rounded" src="../img/graf.png" alt="">
+            </div>
+            <div class="col-lg-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta asperiores doloremque non provident voluptate atque quos rerum laudantium, deserunt repellendus animi expedita omnis rem, dignissimos magni optio! Itaque, necessitatibus porro.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container newsLetter">
+        <div class="row flex-column justify-content-center align-items-center gap-5 py-5 newsLetter rounded-3">
+            <h3 class="col-lg-12 text-center text-white display-5 py-5">Stay <strong class="bg-black p-2 rounded">updated</strong> and get in the <strong class="bg-black p-2 rounded">loop</strong></h3>
+            <div class="d-flex justify-content-center gap-4">
+                <input class="col-lg-3 px-2 rounded" type="email" id="email" placeholder="Your E-mail">
+                <button type="button" class="col-lg-1 btn btn-light rounded btn-outline-dark text-uppercase">Submit</button>
+            </div>
+            <p class="text-center text-white mt-5">Join our mailing list to stay in the loop <br> with our newest feature releases, NFT drops, and tips and tricks for navigating on CanvArt</p>
+        </div>
+        
+    </section>
+
+    <footer class="container-fluid bg-black mt-5">
+        <div class="row text-light mx-3 pt-3">
+            <div class="col-lg-4">
+                <a href=""><img class="img-fluid" src="../img/iconLogo.png" alt=""></a>
+                <a class="text-uppercase canvartFont" href="">CanvArt</a>
+                <p class="pt-4 commercial">© 2022 CanvArt</p>
+            </div>
+            <div class="col-lg-2 border-start my-auto">
+                <h4>My account</h4>
+                <ul class="list-unstyled">
+                    <li class="mt-4"><a href="">My profile</a></li>
+                    <li><a href="">My feed</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Cart</a></li>
+                    <li><a href="">Sign out</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 border-start my-auto">
+                
+                <h4>For artists</h4>
+                <ul class="list-unstyled">
+                    <li class="mt-4"><a href="#">Submit artist profile</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 border-start my-auto">
+                <h4>Community</h4>
+                <ul class="list-unstyled">
+                    <li class="mt-4"><a href="">Magazine</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">Topic</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="https://twitter.com/explore">
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>
+                    </a>
+                      <a href="https://www.facebook.com/groups/298553671833536/">
+                          <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                      </a>
+                      <a href="https://www.instagram.com/marketplace_nft/?hl=fr">
+                          <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                      </a>
+                      <a href="https://mastodon.social/explore">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
+                            <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/>
+                          </svg>
+                      </a>
+                </div>
+            </div>
+            <div class="col-lg-2 border-start my-auto">
+                <h4>Legal</h4>
+                <ul class="list-unstyled">
+                    <li class="mt-4"><a href="">Privacy policy</a></li>
+                    <li><a href="">Terms of services</a></li>
+                    <li><a href="">Report content</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Megrim&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Be Vietnam Pro" !important;
+}
+
+
+
+/* Start header */
+
+/* About logo */
+nav div.logo{
+    display: flex;
+    align-items: center;
+    font-family: Megrim;
+    font-size: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 10px 0px #99A6CE4D;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
+nav div.logo img{
+    width: 80%;
+}
+
+/* End about logo */
+/* About search bar */
+nav div.searchBar input{
+  border: none;
+  padding: 15px ;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: inset 4px 4px 10px rgba(153, 166, 206, 0.3), inset -4px -4px 4px #FFFFFF;
+}
+
+ input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.355);
+    font-family: "Be Vietnam Pro";
+}
+
+/* End search bar */
+nav ul.navigationLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;;
+    gap: 50px;
+}
+
+.navigationLinks li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+header nav img.userIcon{
+    width: 40px;
+}
+
+header nav img.userLogo{
+    width: 50px;
+}
+
+header nav img.token{
+    width: 40px;
+}
+
+header nav div.token2{
+    width: 40px;
+    height: 36px;
+}
+
+
+/* End header */
+
+/* Start banner */
+
+header div.poster{
+    display: flex;
+    align-items: center;
+    margin: 150px 100px;
+    background-image: url(../img/homePictureV1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    border-radius: 10px;
+}
+
+div.poster div.posterDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+div.poster h1{
+    color: white;
+    font-size: 3rem;
+    margin-top: 100px;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+
+div.poster p {
+    margin-top: 0;
+    margin-bottom: 100px;
+    color: white;
+    font-size: 2rem;
+    padding-left: 30px;
+    font-weight: 200;
+}
+
+div.poster a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+div.poster a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* End banner */
+
+/* Start first section */
+
+section.firstSection{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.firstSection div img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+section.firstSection div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 0;
+    padding-left: 30px;
+    border-radius: 15px;
+    box-shadow: -4px -4px 10px #FFFFFF, 4px 4px 10px rgba(153, 166, 206, 0.3), inset -2px -2px 4px #FFFFFF, inset 2px 2px 5px rgba(153, 166, 206, 0.3);
+    width: 50%;
+}
+h2 {
+    margin-bottom: 50px !important;
+    font-size: 2rem;
+    font-weight:300 !important;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+section.firstSection div p{
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+/* End first section */
+
+/* Start faq banner */
+
+section.faq{
+    margin-top: 100px;
+    background-color: #375A7F;
+}
+
+section.faq h3{
+    font-size: 1rem;
+}
+
+section.faq p{
+    font-size: 0.8rem;
+    font-weight: 200 !important;
+}
+
+section.faq div a{
+    font-weight: 600 !important;
+    border-radius: 10px;
+}
+
+section.faq div a:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+
+/* End faq banner */
+
+/* Start Draw me a digtal sheep */
+
+section.drawMe{
+    margin-top: 100px;
+} 
+
+section.drawMe div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+section.drawMe div img{
+    padding: 120px;
+    box-shadow: -4px -4px 10px #FFFFFF, 4px 4px 10px rgba(153, 166, 206, 0.3), inset -2px -2px 4px #FFFFFF, inset 2px 2px 5px rgba(153, 166, 206, 0.3);
+    border-radius: 10px;
+}
+
+section.drawMe div p{
+    width: 50%;
+    padding: 80px;
+    box-shadow: -4px -4px 10px #FFFFFF, 4px 4px 10px rgba(153, 166, 206, 0.3), inset -2px -2px 4px #FFFFFF, inset 2px 2px 5px rgba(153, 166, 206, 0.3);
+    z-index: 1;
+    margin-left: -80px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Start live auctions to display each picture in a scrolling horizontal view */
+
+section.liveAuctions{
+    margin-top: 150px;
+}
+
+
+section.liveAuctions div{
+    display: grid;
+    grid-gap: 30px;
+    padding: 16px;
+    grid-template-columns: repeat(auto-fill ,minmax(300px,1fr)); /* minimum size for pictures = 300 px and each picture fill 1 column */
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(300px,1fr);
+    overflow-x: scroll;
+}
+
+/* To prevent picture scrolling to self-text and align text*/
+section.liveAuctions div div{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+section.liveAuctions div.description h3{
+    font-size: 1rem !important;
+}
+
+section.liveAuctions div.description{
+    font-size: 0.8rem;
+}
+
+section.liveAuctions div div>span{
+    font-size: 0.8rem;
+}
+
+section.liveAuctions div.author, section.liveAuctions div.offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+/* End live auctions */
+
+/* Start notable collections */
+
+section.notableCollections{
+    margin-top: 100px;
+}
+
+section.notableCollections div.customBackground{
+    background-image: url(../img/duneBlur.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.notableCollections div.customBackground1{
+    background-image: url(../img/sparkleBlur.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.notableCollections div.customBackground2{
+    background-image: url(../img/skyBlur.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.notableCollections div.customBackground3{
+    background-image: url(../img/mondrianBlur.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.notableCollections .userIconMondrian{
+    max-width: 50px;
+}
+
+section.notableCollections img.blured:hover {
+    filter: brightness(40%);
+}
+
+section.holdingCoin{
+    margin-top: 100px;
+}
+
+/* CanvArt token */
+
+section.holdingCoin div.cardHolding{
+    margin: auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: -4px -4px 10px #FFFFFF, 4px 4px 10px rgba(153, 166, 206, 0.3), inset -2px -2px 4px #FFFFFF, inset 2px 2px 5px rgba(153, 166, 206, 0.3);
+}
+
+section.newsLetter{
+    margin-top: 100px;
+}
+
+section.newsLetter div.newsLetter{
+    background-image: url(../img/powderBlue.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+footer a.canvartFont{
+    font-family: Megrim !important;
+    font-size: 1.8rem;
+}
+
+footer p.commercial{
+    font-weight: 100 !important;
+}
+
+footer h4{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+footer li{
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
