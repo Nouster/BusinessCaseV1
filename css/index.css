@@ -293,6 +293,7 @@ section.liveAuctions div.author, section.liveAuctions div.offer {
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0;
+    
 }
 
 /* End live auctions */
@@ -304,12 +305,11 @@ section.notableCollections{
 }
 
 section.notableCollections div.customBackground{
-    background-image: url(../img/duneBlur.png);
     background-size: cover;
     background-position: center;
 }
 
-section.notableCollections div.customBackground1{
+/* section.notableCollections div.customBackground1{
     background-image: url(../img/sparkleBlur.png);
     background-size: cover;
     background-position: center;
@@ -325,7 +325,7 @@ section.notableCollections div.customBackground3{
     background-image: url(../img/mondrianBlur.png);
     background-size: cover;
     background-position: center;
-}
+} */
 
 section.notableCollections .userIconMondrian{
     max-width: 50px;
