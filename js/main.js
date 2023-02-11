@@ -104,18 +104,18 @@ liveAuctionPicture.forEach((v) => {
 
 let dataNotablesCollections = [
     {
-        userIcon :"../img/userIconMondrian.gif", title: "The color of dune concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Ethik_Design", img1: "../img/dune1.png", img2:"../img/dune2.png", img3: "../img/dune3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "", customBackground: "../img/duneBlur.png"
+        userIcon :"../img/userIconMondrian.gif", title: "The color of dune concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Ethik_Design", img1: "../img/dune1.png", img2:"../img/dune2.png", img3: "../img/dune3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "", customBackground: "../img/duneBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
     },
     {
-        userIcon :"../img/Efflrescence.gif", title: "SpVrKlE", nftNumber: Math.floor((Math.random()*15)), userName: "@Valter_Vhite", img1: "../img/sparkle1.png", img2:"../img/sparkle2.png", img3: "../img/sparkle4.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/sparkleBlur.png"
+        userIcon :"../img/Efflrescence.gif", title: "SpVrKlE", nftNumber: Math.floor((Math.random()*15)), userName: "@Valter_Vhite", img1: "../img/sparkle1.png", img2:"../img/sparkle2.png", img3: "../img/sparkle4.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/sparkleBlur.png",overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
     },
     {
-        userIcon :"../img/nftGoldQueen.png", title: "Oddity", nftNumber: Math.floor((Math.random()*15)), userName: "@Lola_Kola", img1: "../img/sky1.png", img2:"../img/sky4.jpeg", img3: "../img/sky3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/skyBlur.png"
+        userIcon :"../img/nftGoldQueen.png", title: "Oddity", nftNumber: Math.floor((Math.random()*15)), userName: "@Lola_Kola", img1: "../img/sky1.png", img2:"../img/sky4.jpeg", img3: "../img/sky3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/skyBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
     },
     {
-        userIcon :"../img/nftGenesis.png", title: "Mondrian Concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Jey_Jey_Nayja", img1: "../img/mondrian5.png", img2:"../img/mondrian4.png", img3: "../img/nftMondrian.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/mondrianBlur.png"
+        userIcon :"../img/nftGenesis.png", title: "Mondrian Concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Jey_Jey_Nayja", img1: "../img/mondrian5.png", img2:"../img/mondrian4.png", img3: "../img/nftMondrian.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/mondrianBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
     }
-]
+];
 
 
 
@@ -164,14 +164,14 @@ dataNotablesCollections.forEach((v)=>{
     spanLink.innerHTML = `<img class ="userIconMondrian rounded-circle" src="${v.userIcon}" alt="User Icon"> ${v.userName}`;
     userLink.appendChild(spanLink);
 
-   let vignette1 = document.createElement("div");
-   vignette1.className = "col-lg-4 px-5 my-4";
-   myRow.appendChild(vignette1);
+    let vignette1 = document.createElement("div");
+    vignette1.className = "col-lg-4 px-5 my-4 overInfo";
+    myRow.appendChild(vignette1);
 
-   let picture1 = document.createElement("img");
-   picture1.className = "img-fluid rounded-top blured nft";
-   picture1.src = `${v.img1}`;
-   vignette1.appendChild(picture1);
+    let picture1 = document.createElement("img");
+    picture1.className = "img-fluid rounded-top blured nft";
+    picture1.src = `${v.img1}`;
+    vignette1.appendChild(picture1);
 
    let bottomInformation1 = document.createElement("div");
    bottomInformation1.className = "bg-light px-2 pt-2 mb-2 pb-5 rounded-bottom";
@@ -196,7 +196,7 @@ dataNotablesCollections.forEach((v)=>{
    valueInformation1.appendChild(counter1);
 
    let vignette2 = document.createElement("div");
-   vignette2.className = "col-lg-4 px-5 my-4";
+   vignette2.className = "col-lg-4 px-5 my-4 overInfo";
    myRow.appendChild(vignette2);
 
    let picture2 = document.createElement("img");
@@ -227,7 +227,7 @@ dataNotablesCollections.forEach((v)=>{
    valueInformation2.appendChild(counter2);
 
    let vignette3 = document.createElement("div");
-   vignette3.className = "col-lg-4 px-5 my-4";
+   vignette3.className = "col-lg-4 px-5 my-4 overInfo";
    myRow.appendChild(vignette3);
 
    let picture3 = document.createElement("img");
@@ -260,19 +260,78 @@ dataNotablesCollections.forEach((v)=>{
 
 
 
-let nftPicture = document.querySelectorAll("img.nft");
-nftPicture.forEach((v)=>{
-    v.onmouseover = ()=>{
-        let textOverlay = document.createElement("span");
-        textOverlay.innerHTML = "Mon texte";
-        textOverlay.style = "position: absolute; border: 3px solid red; z-index: 5; font-size: 3rem; color: red; z-index: 1;";
-        v.appendChild(textOverlay);
+let nftPictures = document.querySelectorAll("div.overInfo");
+nftPictures.forEach((v, index)=>{
+    let textOverlay;
 
-    };
+    v.onmouseover = ()=>{
+           
+            textOverlay = document.createElement("span");
+            textOverlay.innerHTML = dataNotablesCollections[index].overlayTitleNft1;
+            textOverlay.style = "position: absolute; top: 150px; left: 150px; font-size: 1.4rem; color: white; z-index: 1;";
+            v.style = "position: relative; cursor: pointer;";
+            v.appendChild(textOverlay);
+
+        };
+
     v.onmouseout =()=>{
-        
+        if(textOverlay){
+            v.removeChild(textOverlay);
+            textOverlay = null;
+        }
     }
-})
+});
+
+
+
+
+let app = document.getElementById('app');
+
+
+let customNodeCreator = function(character) {
+  return document.createTextNode(character);
+}
+
+let typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+  onCreateTextNode: customNodeCreator,
+});
+
+typewriter
+  .typeString('Stay <span class= "bg-dark px-3 py-1 text-white rounded">Updated</span>')
+  .pauseFor(100)
+  .start();
+
+typewriter.typeString(' And')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('Get In <span class = "bg-dark px-3 py-1 text-white rounded">The Loop </span>')
+    .pauseFor(2000)
+    .deleteChars(7)
+    // .typeString('<strong>altered!</strong>')
+    .start();
+
+
+
+// let nftPicture = document.querySelectorAll("div.test");
+// nftPicture.forEach((v)=>{
+//     v.onmouseover = ()=>{
+//         let textOverlay = document.createElement("span");
+//         textOverlay.innerHTML = "Mon texte";
+//         textOverlay.style = "position: absolute; top: 150px; left: 150px; font-size: 1.2rem; color: white; z-index: 1;";
+//         v.style = "position: relative;";
+//         v.appendChild(textOverlay);
+//     };
+//     v.onmouseout =()=>{
+//         let textOverlay = v.querySelector("span");
+//         v.removeChild(textOverlay);
+//     }
+// });
+
+
+
+
 
 // let counterValue = "8:00:00";
 
@@ -301,3 +360,5 @@ nftPicture.forEach((v)=>{
 // }
 
 // setInterval(updateCounter, 1000);
+
+

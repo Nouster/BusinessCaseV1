@@ -353,9 +353,10 @@ section.newsLetter{
 }
 
 section.newsLetter div.newsLetter{
-    background-image: url(../img/powderBlue.png);
-    background-position: center;
-    background-size: cover;
+    border-radius: 15px;
+    background-image: url(../img/);
+    /* border: 1px solid black; */
+    /* background-color: #375A7F; */
 }
 
 
