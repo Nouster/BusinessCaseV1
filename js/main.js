@@ -1,41 +1,7 @@
+import {dataNotablesCollections, dataLiveAuctions} from "./data.js";
+
+
 let liveAuctions = document.querySelector("section.liveAuctions");
-
-// const promise01 = fetch('https://jsonplaceholder.typicode.com/todos/1');
-// promise01.then((response) => {
-//     console.log(response)
-// })
-
-
-
-
-
-
-let dataLiveAuctions = [
-    {img: "../img/nftMondrian.png", title: "Mondrian arch", description: "This is simply a memory from the past. Rainbow mondrian.", price: (Math.random()*10).toFixed(3)  , icon: "../img/iconEth.png", author: "Etik@", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/marylin.gif", title: "Monroe motion", description: "A GIF is worth a book worth of words and art is worth an entire library.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Dall-E", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftGoldQueen.png", title: "Id3entity", description: "Gold Queen : A Journey of Self-Discovery between lands.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftOutOfTheBlue.png", title: "Out of the blue", description: "Hands / remember / fingers / Polished surface.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Nayima-x01", collection: "Han-Han", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/fortior.png", title: "Ram-says", description: "Skeleton. Designed using some creative input from Danil Pan.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "P-BOK", collection: "P-BOK", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/Efflrescence.gif", title: "EfflØrescence", description: "This is simply a memory from the past.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "E@gle", collection: "EfflØrescence", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftMondrian.png", title: "Mondrian arch", description: "This is simply a memory from the past. Rainbow mondrian.", price: (Math.random()*10).toFixed(3)  , icon: "../img/iconEth.png", author: "Etik@", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/marylin.gif", title: "Monroe motion", description: "A GIF is worth a book worth of words and art is worth an entire library.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Dall-E", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftGoldQueen.png", title: "Id3entity", description: "Gold Queen : A Journey of Self-Discovery between lands.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftOutOfTheBlue.png", title: "Out of the blue", description: "Hands / remember / fingers / Polished surface.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Nayima-x01", collection: "Han-Han", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/fortior.png", title: "Ram-says", description: "Skeleton. Designed using some creative input from Danil Pan.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "P-BOK", collection: "P-BOK", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/Efflrescence.gif", title: "EfflØrescence", description: "This is simply a memory from the past.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "E@gle", collection: "EfflØrescence", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftMondrian.png", title: "Mondrian arch", description: "This is simply a memory from the past. Rainbow mondrian.", price: (Math.random()*10).toFixed(3)  , icon: "../img/iconEth.png", author: "Etik@", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/marylin.gif", title: "Monroe motion", description: "A GIF is worth a book worth of words and art is worth an entire library.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Dall-E", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftGoldQueen.png", title: "Id3entity", description: "Gold Queen : A Journey of Self-Discovery between lands.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftOutOfTheBlue.png", title: "Out of the blue", description: "Hands / remember / fingers / Polished surface.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Nayima-x01", collection: "Han-Han", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/fortior.png", title: "Ram-says", description: "Skeleton. Designed using some creative input from Danil Pan.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "P-BOK", collection: "P-BOK", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/Efflrescence.gif", title: "EfflØrescence", description: "This is simply a memory from the past.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "E@gle", collection: "EfflØrescence", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftMondrian.png", title: "Mondrian arch", description: "This is simply a memory from the past. Rainbow mondrian.", price: (Math.random()*10).toFixed(3)  , icon: "../img/iconEth.png", author: "Etik@", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/marylin.gif", title: "Monroe motion", description: "A GIF is worth a book worth of words and art is worth an entire library.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Dall-E", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftGoldQueen.png", title: "Id3entity", description: "Gold Queen : A Journey of Self-Discovery between lands.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Daniel White", collection: "Mondrian Flow 2.0", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/nftOutOfTheBlue.png", title: "Out of the blue", description: "Hands / remember / fingers / Polished surface.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "Nayima-x01", collection: "Han-Han", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/fortior.png", title: "Ram-says", description: "Skeleton. Designed using some creative input from Danil Pan.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "P-BOK", collection: "P-BOK", offer: (Math.random()*10).toFixed(3)},
-    {img: "../img/Efflrescence.gif", title: "EfflØrescence", description: "This is simply a memory from the past.", price: (Math.random()*10).toFixed(3), icon: "../img/iconEth.png", author: "E@gle", collection: "EfflØrescence", offer: (Math.random()*10).toFixed(3)}
-];
 
 
 let container = document.createElement("div");
@@ -97,28 +63,6 @@ liveAuctionPicture.forEach((v) => {
         v.style = "";
     };
 });
-
-
-
-
-
-let dataNotablesCollections = [
-    {
-        userIcon :"../img/userIconMondrian.gif", title: "The color of dune concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Ethik_Design", img1: "../img/dune1.png", img2:"../img/dune2.png", img3: "../img/dune3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "", customBackground: "../img/duneBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
-    },
-    {
-        userIcon :"../img/Efflrescence.gif", title: "SpVrKlE", nftNumber: Math.floor((Math.random()*15)), userName: "@Valter_Vhite", img1: "../img/sparkle1.png", img2:"../img/sparkle2.png", img3: "../img/sparkle4.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/sparkleBlur.png",overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
-    },
-    {
-        userIcon :"../img/nftGoldQueen.png", title: "Oddity", nftNumber: Math.floor((Math.random()*15)), userName: "@Lola_Kola", img1: "../img/sky1.png", img2:"../img/sky4.jpeg", img3: "../img/sky3.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/skyBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
-    },
-    {
-        userIcon :"../img/nftGenesis.png", title: "Mondrian Concept", nftNumber: Math.floor((Math.random()*15)), userName: "@Jey_Jey_Nayja", img1: "../img/mondrian5.png", img2:"../img/mondrian4.png", img3: "../img/nftMondrian.png", price: (Math.random()*10).toFixed(3), currentBid: (Math.random()*10).toFixed(3), endOn: "",  customBackground: "../img/mondrianBlur.png", overlayTitleNft1 : "#1 Hot Sand", overlayTitleNft2: "#2 Cold Sand", overlayTitleNft3: "#3 Hot & Cold"
-    }
-];
-
-
-
 
 
 let containerCollection = document.querySelector("section.notableCollections");
@@ -258,19 +202,20 @@ dataNotablesCollections.forEach((v)=>{
    valueInformation3.appendChild(counter3);
 })
 
-
-
 let nftPictures = document.querySelectorAll("div.overInfo");
 nftPictures.forEach((v, index)=>{
     let textOverlay;
 
     v.onmouseover = ()=>{
-           
-            textOverlay = document.createElement("span");
-            textOverlay.innerHTML = dataNotablesCollections[index].overlayTitleNft1;
-            textOverlay.style = "position: absolute; top: 150px; left: 150px; font-size: 1.4rem; color: white; z-index: 1;";
-            v.style = "position: relative; cursor: pointer;";
-            v.appendChild(textOverlay);
+
+
+                dataNotablesCollections.forEach((data)=>{
+                textOverlay = document.createElement("span");
+                textOverlay.innerHTML = data.overlayTitleNft1;
+                textOverlay.style = "position: absolute; top: 150px; left: 150px; font-size: 1.4rem; color: white; z-index: 1;";
+                v.style = "position: relative; cursor: pointer;";
+                v.appendChild(textOverlay);
+            })
 
         };
 
@@ -281,9 +226,6 @@ nftPictures.forEach((v, index)=>{
         }
     }
 });
-
-
-
 
 let app = document.getElementById('app');
 
@@ -302,7 +244,7 @@ typewriter
   .typeString('Stay <span class= "bg-dark px-3 py-1 text-white rounded">Updated</span>')
   .pauseFor(100)
   .start();
-
+ 
 typewriter.typeString(' And')
     .pauseFor(2000)
     .deleteAll()
@@ -313,52 +255,11 @@ typewriter.typeString(' And')
     .start();
 
 
-
-// let nftPicture = document.querySelectorAll("div.test");
-// nftPicture.forEach((v)=>{
-//     v.onmouseover = ()=>{
-//         let textOverlay = document.createElement("span");
-//         textOverlay.innerHTML = "Mon texte";
-//         textOverlay.style = "position: absolute; top: 150px; left: 150px; font-size: 1.2rem; color: white; z-index: 1;";
-//         v.style = "position: relative;";
-//         v.appendChild(textOverlay);
-//     };
-//     v.onmouseout =()=>{
-//         let textOverlay = v.querySelector("span");
-//         v.removeChild(textOverlay);
-//     }
-// });
-
-
-
-
-
-// let counterValue = "8:00:00";
-
-// function updateCounter() {
-// let timeArray = counterValue.split(":");
-// let hour = parseInt(timeArray[0]);
-// let minute = parseInt(timeArray[1]);
-// let second = parseInt(timeArray[2]);
-
-// second++;
-// if (second >= 60) {
-// second = 0;
-// minute++;
-// }
-// if (minute >= 60) {
-// minute = 0;
-// hour++;
-// }
-
-// let formattedHour = (hour < 10) ? "0" + hour : hour;
-// let formattedMinute = (minute < 10) ? "0" + minute : minute;
-// let formattedSecond = (second < 10) ? "0" + second : second;
-
-// counterValue = `${formattedHour}:${formattedMinute}:${formattedSecond}`;
-// counter.innerHTML = `Ends On : ${counterValue}`;
-// }
-
-// setInterval(updateCounter, 1000);
-
+let adress = document.querySelector("button.adress");
+adress.onmouseover = ()=>{
+    adress.style ="transform: scale(1.2);";
+}
+adress.onmouseout = ()=>{
+    adress.style = "transform: scale(1); z-index: 2; position: relative;";
+}
 

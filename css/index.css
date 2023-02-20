@@ -386,3 +386,10 @@ footer a{
     text-decoration: none;
     color: white;
 }
+
+
+/* Style for explore NFT's page  */
+
+section.exploreSection h2{
+    margin-top: 200px;
+}
